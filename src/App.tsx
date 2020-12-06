@@ -7,7 +7,7 @@ import {
 
 import "./index.css";
 import ProductDetail from "./pages/ProductDetail";
-import Products from "./pages/Products";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (

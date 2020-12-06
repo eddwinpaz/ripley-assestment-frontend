@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProductAPI from "../Apis/ProductAPI";
+import ProductAPI from "../../Apis/ProductAPI";
 
 const initialProduct = {
   id: "",

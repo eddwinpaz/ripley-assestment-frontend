@@ -17,13 +17,17 @@ const SearchInput = (): JSX.Element => {
     <form onSubmit={submit}>
       <div className="form">
         <input
+          name="query"
+          id="query"
           placeholder="Search product by nombre, id, marca, descripcion"
           type="text"
           value={query}
           disabled={isLoading}
           onChange={(event) => setQuery(event.target.value)}
         />
-        <button type="submit" disabled={isLoading}>Search</button>
+        <button type="submit" disabled={isLoading}>
+          Search
+        </button>
       </div>
     </form>
   );

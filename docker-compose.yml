@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/opt/app
+      - /opt/app/node_modules
+    environment:
+      - MONGO_URI=db/store

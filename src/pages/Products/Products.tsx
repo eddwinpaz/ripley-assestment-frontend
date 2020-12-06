@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import ProductAPI from "../Apis/ProductAPI";
-import ProductList from "../components/ProductList";
-import SearchInput from "../components/SearchInput";
-import AppContext from "../context/AppContext";
+import ProductAPI from "../../Apis/ProductAPI";
+import ProductList from "../../components/ProductList";
+import SearchInput from "../../components/SearchInput";
+import AppContext from "../../context/AppContext";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
