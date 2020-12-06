@@ -2,7 +2,7 @@ class ProductAPI {
   url: string;
 
   constructor() {
-    this.url = process.env.REST_API_URI || "https://ripley-backend-server.herokuapp.com/api/product";
+    this.url = process.env.REACT_APP_API_URI || "https://ripley-backend-server.herokuapp.com/api/product";
   }
 
   async getProducts() {

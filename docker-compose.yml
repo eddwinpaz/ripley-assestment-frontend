@@ -1,9 +1,11 @@
-version: '2'
+version: '3'
 services:
   web:
     build: .
     ports:
-      - "3000:3000"
+      - "80:80"
+    environment:
+      - REST_API_URI=localhost:3000
     volumes:
       - .:/opt/app
       - /opt/app/node_modules
