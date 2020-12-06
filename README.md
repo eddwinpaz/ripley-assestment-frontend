@@ -1,3 +1,19 @@
+[![Actions Status: test](https://github.com/eddwinpaz/ripley-assestment-frontend/workflows/test/badge.svg)](https://github.com/eddwinpaz/ripley-assestment-frontend/actions?query=is:success")
+
+# Ripley Assestment Frontend
+
+## Using Docker
+
+- docker-compose build && docker-compose up -d
+
+
+## Assestment Terms
+
+- Palindrome Search: Search for word on "adida" and you will get a 20% discount over the full price
+- Insert the Product ID on the search bar input and you will get the single product result
+- Search for any word and you will get results from (Marca, Nombre, Descripcion)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
