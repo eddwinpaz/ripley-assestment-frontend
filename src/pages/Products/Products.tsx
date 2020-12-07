@@ -26,7 +26,7 @@ const Products = () => {
     if(resp === null) {
       setProducts([]);
     } else {
-      setProducts(resp.product);
+      setProducts(resp.products);
     }
   };
 
