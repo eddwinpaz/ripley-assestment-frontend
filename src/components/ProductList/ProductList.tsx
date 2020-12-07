@@ -15,8 +15,8 @@ const ProductList = () => {
       <div className="main-container">
         <h2 className="product-results">Product Results</h2>
       </div>
-      {products.length === 0 && <EmptyProductList />}
-      {products.length > 0 && <section className="products">{displayProductList(products)}</section>}
+      {products !== null && products.length === 0 && <EmptyProductList />}
+      {products !== null && products.length > 0 && <section className="products">{displayProductList(products)}</section>}
     </>
   );
 };

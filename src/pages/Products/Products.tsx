@@ -10,15 +10,25 @@ const Products = () => {
 
   const fetchProducts = async (): Promise<void> => {
     const resp = await ProductAPI.getProducts();
-    setProducts(resp);
+
     setLoading(false);
+    if(resp === null) {
+      setProducts([]);
+    } else {
+      setProducts(resp.products);
+    }
+
   };
 
   const searchQuery = async (query: string): Promise<void> => {
     setLoading(true);
     const resp = await ProductAPI.searchProducts(query);
     setLoading(false);
-    setProducts(resp.products);
+    if(resp === null) {
+      setProducts([]);
+    } else {
+      setProducts(resp.products);
+    }
   };
 
   useEffect(() => {
