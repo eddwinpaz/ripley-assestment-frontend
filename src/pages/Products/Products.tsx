@@ -9,15 +9,14 @@ const Products = () => {
   const [isLoading, setLoading] = useState(false);
 
   const fetchProducts = async (): Promise<void> => {
+    setLoading(true);
     const resp = await ProductAPI.getProducts();
-
     setLoading(false);
     if(resp === null) {
       setProducts([]);
     } else {
-      setProducts(resp.products);
+      setProducts(resp);
     }
-
   };
 
   const searchQuery = async (query: string): Promise<void> => {
@@ -27,12 +26,11 @@ const Products = () => {
     if(resp === null) {
       setProducts([]);
     } else {
-      setProducts(resp.products);
+      setProducts(resp.product);
     }
   };
 
   useEffect(() => {
-    setLoading(true);
     fetchProducts();
   }, []);
 
