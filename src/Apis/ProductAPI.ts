@@ -29,7 +29,7 @@ class ProductAPI {
 
   async searchProducts(query: string) {
     try {
-      const req = await fetch(`${this.url}/search/?query=${query}`);
+      const req = await fetch(`${this.url}/?query=${query}`);
       const resp = await req.json();
       return resp;
     } catch (err) {
